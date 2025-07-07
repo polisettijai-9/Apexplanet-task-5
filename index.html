@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resort Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Luxury Resort Booking</h1>
+    <nav>
+      <ul>
+        <li><a href="#resorts">Resorts</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="resorts">
+    <h2>Featured Resorts</h2>
+    <div class="resort-list">
+      <div class="resort-card">
+        <img src="https://source.unsplash.com/400x300/?resort,beach" alt="Beach Resort">
+        <h3>Ocean View Paradise</h3>
+        <p>Beautiful beach resort with sunset views and private villas.</p>
+      </div>
+      <div class="resort-card">
+        <img src="https://source.unsplash.com/400x300/?resort,mountain" alt="Mountain Resort">
+        <h3>Hilltop Haven</h3>
+        <p>Peaceful mountain resort with scenic trails and spa services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Stay</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="resort">Choose Resort:</label>
+      <select id="resort" required>
+        <option value="">-- Select --</option>
+        <option value="Ocean View Paradise">Ocean View Paradise</option>
+        <option value="Hilltop Haven">Hilltop Haven</option>
+      </select>
+
+      <label for="date">Check-in Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="nights">Nights:</label>
+      <input type="number" id="nights" min="1" value="1" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@luxresorts.com</p>
+    <p>Phone: +91-98765-43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luxury Resorts. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
